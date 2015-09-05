@@ -1,0 +1,38 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node --stage 0",
+    "start": "build/build-development"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "react": "^0.13.3",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babelify": "^6.3.0",
+    "browserify": "^11.0.1",
+    "nodemon": "^1.4.1",
+    "watchify": "^3.4.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "stage": [
+            0
+          ]
+        }
+      ]
+    ]
+  }
+}
